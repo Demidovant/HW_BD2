@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS artist_genre (
 
 CREATE TABLE IF NOT EXISTS tracks (
 	track_id SERIAL PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
 	album INT NOT NULL REFERENCES albums(album_id),
 	duration INT NOT NULL
 );
